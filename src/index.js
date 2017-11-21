@@ -12,3 +12,20 @@ const map = new mapboxgl.Map({
 
 const marker = buildMarker('activity', [-74.009151, 40.705086])
 marker.addTo(map)
+
+const mapStyles = {
+  streets: 'mapbox://styles/mapbox/streets-v10',
+    dark: 'mapbox://styles/mapbox/dark-v9',
+    light: 'mapbox://styles/mapbox/light-v9',
+    outdoors: 'mapbox://styles/mapbox/outdoors-v10',
+    satellite: 'mapbox://styles/mapbox/satellite-v9',
+    sattelliteStreets: 'mapbox://styles/mapbox/satellite-streets-v10',
+}
+
+let mapStyleEl = document.getElementById('map-style')
+let selectedStyle = mapStyleEl.options[mapStyleEl.selectedIndex].value
+
+function switchLayer(layer) {
+  var layerId = layer.target.id
+  map.setStyle(mapStyles[selectedStyle])
+}
