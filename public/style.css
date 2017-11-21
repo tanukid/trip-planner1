@@ -8,7 +8,64 @@ body {
   background-color: #C1B5AD;
 }
 
+#navbar {
+  padding-left: 1em;
+}
+
 #map {
   height: 100vh;
   width: 100vw;
+}
+
+.content{
+  display: flex;
+}
+
+#sidebar {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  flex: 0 0 20em
+}
+
+#options select {
+  width: 15em;
+}
+
+#sidebar button {
+  background-color: firebrick;
+  border: none;
+  color: white;
+  padding: 0.5em 0.7em;
+  font-size: 0.75em;
+}
+
+#options {
+  padding: 0 3em 1em 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 1em;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fac695+0,f5ab66+47,ef8d31+100;Orange+3D+%232 */
+  background: #fac695; /* Old browsers */
+  background: -moz-linear-gradient(top, #fac695 0%, #f5ab66 47%, #ef8d31 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fac695 0%,#f5ab66 47%,#ef8d31 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fac695 0%,#f5ab66 47%,#ef8d31 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fac695', endColorstr='#ef8d31',GradientType=0 ); /* IE6-9 */
+}
+
+#itineraries {
+  padding: 0 3em 1em 3em;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a9e4f7+0,0fb4e7+100;Ble+3D+%235 */
+  background: #a9e4f7; /* Old browsers */
+  background: -moz-linear-gradient(top, #a9e4f7 0%, #0fb4e7 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a9e4f7 0%,#0fb4e7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #a9e4f7 0%,#0fb4e7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=0 ); /* IE6-9 */
+}
+
+.itinerary-category li {
+  margin-bottom: 0.5em;
 }
